@@ -21,10 +21,14 @@ so the update process would look like this:
 1) mount unbooted root at /mnt
 2) arch-chroot to /mnt
 3) run command to upgrade (pacman -Syu)
+
 if the update fails:
+
   4) give an error
   5) exit
+  
 if the upgrade succeeds:
+
   4) change fstab to mount different root at /
   5) update grub to use different root
   6) reboot
